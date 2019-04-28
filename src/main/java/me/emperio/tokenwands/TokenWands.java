@@ -66,6 +66,8 @@ public final class TokenWands extends JavaPlugin {
             int value = getConfig().getInt("tokenchance." + each);
             hm.put(each, value);
         }
+
+        return hm;
     }
 
 
