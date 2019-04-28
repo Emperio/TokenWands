@@ -59,6 +59,7 @@ lang:
 
 #values in this our the total chance, so if you type "100", this means a 1/100 chance to drop
 #use mob names from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+#do not use 1 as the chance !! !!!!!!!
 tokenchance:
   BLAZE: 100
   CREEPER: 150
