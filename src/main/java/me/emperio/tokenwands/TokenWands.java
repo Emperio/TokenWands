@@ -80,10 +80,11 @@ public final class TokenWands extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerUsesWand(this), this);
         getServer().getPluginManager().registerEvents(new MobDies(this), this);
     }
-
+    
+    //version data etc (not final)
     public void checkVersion(){
 
-        String version = "1.3";
+        String version = "1.4";
         getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + "TokenWands version is v" + version );
 
     }

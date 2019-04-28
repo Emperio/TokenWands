@@ -16,7 +16,7 @@ public class MobDies implements Listener {
         this.plugin = instance;
     }
 
-    @SuppressWarnings( "deprecation" )
+
     @EventHandler
     public void onPlayerKillMobEvent(EntityDeathEvent e){
         Entity dead = e.getEntity();
