@@ -68,6 +68,7 @@ public final class TokenWands extends JavaPlugin {
         }
 
         return hm;
+        //just checking is stuff works tbh
     }
 
 
