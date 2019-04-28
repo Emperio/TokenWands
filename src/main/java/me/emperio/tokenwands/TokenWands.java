@@ -1,5 +1,6 @@
 package me.emperio.tokenwands;
 
+import me.emperio.tokenwands.events.MobDies;
 import me.emperio.tokenwands.events.PlayerUsesWand;
 import me.emperio.tokenwands.wands.LeapWand;
 import me.emperio.tokenwands.wands.RegenWand;
@@ -22,12 +23,10 @@ public final class TokenWands extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        new StrengthWand().initializeRecipe();
-        new SpeedWand().initializeRecipe();
-        new LeapWand().initializeRecipe();
-        new RegenWand().initializeRecipe();
         findTokenManager();
-        getServer().getPluginManager().registerEvents(new PlayerUsesWand(this), this);
+        initializeEvents();
+        initializeRecipes();
+        checkVersion();
 
     }
 
@@ -68,7 +67,25 @@ public final class TokenWands extends JavaPlugin {
         }
 
         return hm;
-        //just checking is stuff works tbh
+    }
+
+    public void initializeRecipes(){
+        new StrengthWand().initializeRecipe();
+        new SpeedWand().initializeRecipe();
+        new LeapWand().initializeRecipe();
+        new RegenWand().initializeRecipe();
+    }
+
+    public void initializeEvents(){
+        getServer().getPluginManager().registerEvents(new PlayerUsesWand(this), this);
+        getServer().getPluginManager().registerEvents(new MobDies(this), this);
+    }
+
+    public void checkVersion(){
+
+        String version = "1.3";
+        getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + "TokenWands version is v" + version );
+
     }
 
 

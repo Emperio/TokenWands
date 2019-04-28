@@ -57,6 +57,19 @@ lang:
   buff-already-active: "&cBuff from this wand is already active"
 
 
+#values in this our the total chance, so if you type "100", this means a 1/100 chance to drop
+#use mob names from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+tokenchance:
+  BLAZE: 100
+  CREEPER: 150
+  ENDERMAN: 100
+  PIG_ZOMBIE: 100
+  SKELETON: 200
+  SPIDER: 200
+  WITCH: 40
+  ZOMBIE: 200
+  #IRON_GOLEM: 200 #just an example of how you could add new mob chances
+
   #strengthwand:
   #leapwand:
   #firereswand:
