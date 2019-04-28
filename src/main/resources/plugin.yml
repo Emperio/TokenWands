@@ -1,0 +1,7 @@
+name: TokenWands
+version: ${project.version}
+main: me.emperio.tokenwands.TokenWands
+api-version: 1.13
+authors: [Emperio]
+description: Emperio's Wands Plugin
+depend: [TokenManager] #forgot about that lol

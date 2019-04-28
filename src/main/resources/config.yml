@@ -1,0 +1,75 @@
+#a wand's data will default if anything is broken here, all default config values will be used
+
+###############
+# TOKEN WANDS #
+###############
+
+# CONFIG DESCRIPTION:
+# "name:" is the name of the wand
+# "length:" is the length of the effect(in ticks [ 20 ticks = 1 second ]) #length is in ticks
+# "lore:" is the lore of the wand item
+# "cost:" is the cost of creating the wand (in tokens)
+# "amplifier: " is the amount the effect is amplified. i.e: amplifier 0 would make it STRENGHT 1
+# "item" IMPORTANT! is the item you use on top of the 2 sticks formation in the crafting table
+#         A full list of items can be found here https://github.com/Bukkit/Bukkit/blob/master/src/main/java/org/bukkit/Material.java
+
+
+wands:
+  strength:
+    name: "&d&lWand o' &aStrength"
+    length: 200
+    lore:
+      - " "
+      - "&7&oGives you strength for &a&o15 seconds"
+    cost: 10
+    item: "BLAZE_POWDER"
+    amplifier: 1
+  speed:
+    name: "&d&lWand o' &aSpeed"
+    length: 200
+    lore:
+      - " "
+      - "&7&oGives you speed for &a&o15 seconds"
+    cost: 10
+    item: "SUGAR"
+    amplifier: 1
+  leap:
+    name: "&d&lWand o' &aLeaping"
+    length: 200
+    lore:
+      - " "
+      - "&7&oGives you leaping for &a&o15 seconds"
+    cost: 10
+    item: "QUARTZ"
+    amplifier: 1
+  regen:
+    name: "&d&lWand o' &aRegen"
+    length: 200
+    lore:
+      - " "
+      - "&7&oGives you regeneration for &a&o15 seconds"
+    cost: 10
+    item: "GHAST_TEAR"
+    amplifier: 1
+
+lang:
+  wand-used: "&bBuff used from" #wand name will be added auto
+  buff-already-active: "&cBuff from this wand is already active"
+
+
+#values in this our the total chance, so if you type "100", this means a 1/100 chance to drop
+#use mob names from https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+tokenchance:
+  BLAZE: 100
+  CREEPER: 150
+  ENDERMAN: 100
+  PIG_ZOMBIE: 100
+  SKELETON: 200
+  SPIDER: 200
+  WITCH: 40
+  ZOMBIE: 200
+  #IRON_GOLEM: 200 #just an example of how you could add new mob chances
+
+  #strengthwand:
+  #leapwand:
+  #firereswand:

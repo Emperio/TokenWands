@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TokenWands-1.0:jar">
+    <output-path>$PROJECT_DIR$/../../FACTIONS TEST/plugins/</output-path>
+    <root id="archive" name="TokenWands-1.0.jar">
+      <element id="module-output" name="WandsPlugin" />
+    </root>
+  </artifact>
+</component>
